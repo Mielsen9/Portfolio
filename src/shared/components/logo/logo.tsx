@@ -11,7 +11,7 @@ type PropsType = {
 // Logo
 const Logo: React.FC<PropsType> = React.memo(({ style, href }) => {
 	return (
-		<div className={style}>
+		<div className={s.conteiner}>
 			<a href={href || "#"}>
 				<LogoImg className={s.logo}/>
 			</a>

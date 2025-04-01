@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
+import App from "./App";
 
 // Створення маршрутів за допомогою createBrowserRouter
 export const router = createBrowserRouter([
 		{
 			path: "/",
-			// element: <App/> ,
+			element: <App/> ,
 			// children: [
 			// 	{ path: "/", element: <RecipesPage /> },
 			//
@@ -12,6 +13,6 @@ export const router = createBrowserRouter([
 		},
 	],
 	// {
-	// 	basename: , // Шлях до репозиторію на GitHub
+	// 	basename: "b", // Шлях до репозиторію на GitHub
 	// }
 );

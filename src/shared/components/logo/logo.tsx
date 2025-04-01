@@ -1,20 +1,19 @@
 import React from "react";
 import * as s from "./logo.module.scss";
+import LogoImg from "@/asset/images/svgicons/logo.svg"
 
 // Типи
 type PropsType = {
-	img: string;
 	style?: string;
 	href?: string;
-	alt: string;
 };
 
 // Logo
-const Logo: React.FC<PropsType> = React.memo(({ img, style, href, alt }) => {
+const Logo: React.FC<PropsType> = React.memo(({ style, href }) => {
 	return (
 		<div className={style}>
-			<a href={href}>
-				<img className={s.logo} src={img} alt={alt} />
+			<a href={href || "#"}>
+				<LogoImg className={s.logo}/>
 			</a>
 		</div>
 	);

@@ -1,6 +1,7 @@
 import React from "react";
 import * as s from "./Header.module.scss"
 import Logo from "@/shared/components/Logo/Logo";
+import { Nav } from "@/features/Nav";
 // Type
 type PropsType = {
 
@@ -11,7 +12,12 @@ const Header: React.FC<PropsType> = React.memo((p) => {
 	// Return
 	return (
 		<div className={s.conteiner}>
-			<Logo/>
+			<div className={s.logo}>
+				<Logo/>
+			</div>
+			<div>
+				<Nav/>
+			</div>
 		</div>
 	)
 });

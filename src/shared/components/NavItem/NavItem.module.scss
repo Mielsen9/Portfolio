@@ -1,0 +1,18 @@
+.navLink {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #fff;
+  display: block;
+  &:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 10px;
+
+  }
+  &:active {
+    color: gray;
+  }
+  font-size: 15px;
+}

@@ -1,0 +1,30 @@
+@use "@/App/scss/utils/mixins" as *;
+.nav {
+  display: flex;
+  justify-content:space-between;
+}
+.navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-right: 10px;
+  @include mobile {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    gap: 40px;
+    font-size: 50px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #252526;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+.navList.active {
+  transform: translateY(0);
+}

@@ -1,3 +1,4 @@
+@use "@/App/scss/utils/mixins" as *;
 .conteiner {
   display: flex;
   flex-direction: column;
@@ -21,4 +22,12 @@
 .textTitle {
   font-weight: 600;
   padding: 5px;
+}
+@include mobile {
+  .conteiner {
+
+  }
+  .text {
+    display: none;
+  }
 }

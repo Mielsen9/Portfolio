@@ -1,6 +1,29 @@
+@use "@/App/scss/utils/containers" as *;
+@use "@/App/scss/utils/mixins" as *;
 .conteiner {
   height: 100vh;
+  display: flex;
+  align-items: center;
   background-image: url("@/asset/images/intro/Intro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.aboutMeContainer {
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  margin: 50px 20px 0;
+  box-sizing: border-box;
+  background-color: grey;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@include mobile {
+  .aboutMeContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
 }

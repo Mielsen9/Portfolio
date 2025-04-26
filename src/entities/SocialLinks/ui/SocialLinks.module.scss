@@ -1,0 +1,22 @@
+@use "@/App/scss/utils/mixins" as *;
+.container {
+  background-color: grey;
+  width: calc(100% - 40px);
+  height: 60px;
+  margin: 60px 20px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  margin: 0 20px;
+}
+@include mobile {
+  .container {
+    justify-content: space-around;
+  }
+  .icon {
+    margin: 0 5px;
+  }
+}

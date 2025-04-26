@@ -1,6 +1,6 @@
 import React from "react";
 import * as s from "./Nav.module.scss"
-import NavItem from "@/shared/components/NavItem/NavItem";
+import NavItem from "@/features/Nav/ui/NavItem/NavItem";
 import {NAV_ITEM} from "@/features/Nav/constants/constants";
 import NavBtn from "@/features/Nav/ui/NavBtn/NavBtn";
 import {useNav} from "@/features/Nav/hook/useNav";

@@ -1,3 +1,3 @@
-export { Nav } from "./ui/NavUi/Nav"
+export { Nav } from "./ui/Nav"
 
 

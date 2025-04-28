@@ -1,0 +1,15 @@
+@use "@/App/scss/utils/function" as *;
+.container {
+  margin: 20px 0;
+}
+.number {
+  color: grey;
+  margin-right: 10px;
+}
+.title {
+  font-size: fun-adaptiv(42, 30);
+}
+.subTitle {
+  font-size: fun-adaptiv(24, 16);
+  margin-left: fun-adaptiv(50, 45);
+}

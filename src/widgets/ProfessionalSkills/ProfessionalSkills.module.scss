@@ -1,0 +1,13 @@
+@use "@/App/scss/utils/containers" as *;
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.backGround {
+  background:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("@/asset/images/Skills/SkillsBack.png") center/cover no-repeat;
+}

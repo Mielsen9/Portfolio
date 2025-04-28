@@ -1,6 +1,6 @@
 import React from "react";
 import * as s from "./MyImage.module.scss"
-import Img from "@/shared/components/Img/Img";
+import Img from "@/shared/ui/Img/Img";
 import MyImagesJpeg from "@/asset/images/MyImage/avatar.jpeg";
 import MyImagesWebP from "@/asset/images/MyImage/avatar.webp";
 // Type

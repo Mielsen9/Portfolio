@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.progressWrapper {
+  flex: 1;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.progres {
+  height: 100%;
+  background-color: greenyellow;
+  transition: width 2.5s ease-in-out;
+  border-radius: 5px 0 0 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nameConteiner {
+  text-align: end;
+  width: 90px;
+}
+.percent {
+  width: 40px;
+  text-align: start;
+}

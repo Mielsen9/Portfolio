@@ -1,0 +1,7 @@
+@use "@/App/scss/utils/mixins" as *;
+.container {
+  width:  calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import * as s from "./Header.module.scss"
-import Logo from "@/shared/components/Logo/Logo";
+import Logo from "@/shared/ui/Logo/Logo";
 import { Nav } from "@/features/Nav";
 // Type
 type PropsType = {

@@ -5,7 +5,7 @@
   display: none;
   position: absolute;
   right: rem(10);
-  bottom: rem(10);
+  bottom: rem(20);
   z-index: 999;
 
   --time: 0.1s;
@@ -30,7 +30,7 @@
    //display: flex;
    //justify-content: center;
    //align-items: center;
-  @include mobile {
+  @include tablet {
     display: block;
   }
 }

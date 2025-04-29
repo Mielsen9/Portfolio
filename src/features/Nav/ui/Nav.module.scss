@@ -10,21 +10,27 @@
   gap: 20px;
   flex-wrap: wrap;
   padding-right: 10px;
-  @include mobile {
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
+  @include tablet {
+    height: 90vh;
+    width: 98%;
+    border-radius: 10px;
     gap: 40px;
     font-size: 50px;
     justify-content: center;
     flex-direction: column;
     background-color: #252526;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    //transform: translateY(-100%);
+    transform: scale(0); // спочатку згорнуте
+    transform-origin: top right; // розгортання з верхнього краю
     transition: transform 0.5s ease-in-out;
   }
 }
 .navList.active {
-  transform: translateY(0);
+  //transform: translateY(0);
+  transform: scale(1); // повністю розгорнуте
+  height: 90vh;
+  width: 98%;
 }

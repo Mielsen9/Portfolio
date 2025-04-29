@@ -14,4 +14,4 @@ export const socialLinks: SocialLinksType[] = [
 ];
 
 export const iconSize = 27;
-export const iconColor = "#000";
+export const iconColor = "#fff";

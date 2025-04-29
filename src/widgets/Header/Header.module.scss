@@ -8,6 +8,18 @@
   align-items: center;
   position: absolute;
 }
+.newStyle {
+  background-color: grey;
+  border-radius: 10px;
+  max-width: calc(var(--container-width) - 70px);
+  height: 60px;
+  margin: 0 20px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
 .logo {
   height: 140%;
   z-index: 999;

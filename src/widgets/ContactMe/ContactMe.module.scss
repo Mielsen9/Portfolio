@@ -1,0 +1,33 @@
+@use "@/App/scss/utils/containers" as *;
+@use "@/App/scss/utils/mixins" as *;
+.background {
+  background:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("@/asset/images/ContactMe/backGroundContactMe.png") center/cover no-repeat;
+}
+.container {
+  max-width:  calc(var(--container-width) - 200px);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: grey;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.contactConteiner {
+  display: flex;
+  justify-content: space-around;
+}
+.contactTitle {
+  margin: 10px 20px;
+  font-size: 32px;
+}
+
+@include tablet {
+  .contactConteiner {
+    flex-direction: column-reverse;
+  }
+  .contactTitle {
+    margin: 20px auto;
+  }
+}

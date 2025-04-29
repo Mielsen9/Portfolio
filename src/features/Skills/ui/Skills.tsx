@@ -7,7 +7,7 @@ type PropsType = {
 
 };
 // Skills
-const Skills: React.FC<PropsType> = React.memo((p) => {
+export const Skills: React.FC<PropsType> = React.memo((p) => {
 
 	// Return
 	return (
@@ -18,5 +18,3 @@ const Skills: React.FC<PropsType> = React.memo((p) => {
 		</ul>
 	)
 });
-
-export default Skills

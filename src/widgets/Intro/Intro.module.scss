@@ -14,17 +14,18 @@
   display: flex;
   justify-content: space-between;
   width: calc(100% - 40px);
-  margin: 50px 20px 0;
+  margin: 5vh auto;
   box-sizing: border-box;
   background-color: grey;
   border-radius: 10px;
   overflow: hidden;
 }
-@include mobile {
+@include tablet {
   .aboutMeContainer {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     height: auto;
+    max-width: 450px;
   }
 }

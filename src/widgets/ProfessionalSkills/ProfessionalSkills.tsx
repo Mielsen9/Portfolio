@@ -1,7 +1,7 @@
 import React from "react";
 import * as s from "./ProfessionalSkills.module.scss"
 import SectionTitle from "@/shared/ui/SectionTitle/SectionTitle";
-import Skills from "@/features/Skills/ui/Skills";
+import {Skills} from "@/features/Skills";
 // Type
 type PropsType = {
 

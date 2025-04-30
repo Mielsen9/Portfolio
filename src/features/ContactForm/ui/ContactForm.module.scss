@@ -1,11 +1,16 @@
+@use "@/App/scss/utils/mixins" as *;
 .contact-form-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  position: relative;
 }
 
 .success-message {
+  position: absolute;
+  bottom: 10px;
+  left: -110%;
   background-color: #00d954;
   color: white;
   padding: 1rem 2rem;
@@ -77,5 +82,11 @@
     &:hover {
       background-color: #00b746;
     }
+  }
+}
+
+@include tablet {
+  .success-message {
+    position: inherit;
   }
 }

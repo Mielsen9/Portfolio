@@ -10,7 +10,7 @@ const Footer: React.FC<PropsType> = React.memo((p) => {
 
 	// Return
 	return (
-		<section className={s.footer}>
+		<footer className={s.footer}>
 			<div className={s.wrapper}>
 				<div className={s.container}>
 					<div className={s.logo}>
@@ -19,7 +19,7 @@ const Footer: React.FC<PropsType> = React.memo((p) => {
 					<p>© 2035 by Petro Zvir. </p>
 				</div>
 			</div>
-		</section>
+		</footer>
 	)
 });
 

@@ -14,37 +14,37 @@ const Main: React.FC = () => {
 	return (
 		<div className={s.parallaxWrapper}>
 
-			<div className={`${s.parallaxGroup}`} id={s.intro}>
+			<div id={s.intro}>
 				<Intro/>
 			</div>
 
-			<div className={`${s.parallaxGroup}` }>
-				<div className={`${s.parallaxLayer} ${s.baseLayer}`}>
+			<div className={`${s.parallaxGroup}`} id={s.professionalSkills}>
+				<div className={`${s.parallaxLayer} ${s.midLayer}`}>
 					<ProfessionalSkills/>
 				</div>
-				<div className={`${s.parallaxLayer} ${s.midLayer}`}>
-					<img src={ProfessionalSkillsBack} alt="Contact me background" />;
+				<div className={`${s.parallaxLayer} ${s.baseLayer}`}>
+					<img src={ProfessionalSkillsBack} alt="Contact me background" />
 				</div>
 			</div>
 
-			<div className={`${s.parallaxGroup}`}>
+			<div className={`${s.parallaxGroup}`} id={s.projects}>
 				<Projects/>
 			</div>
 
-			<div className={`${s.parallaxGroup}`}>
-				<div className={`${s.parallaxLayer} ${s.baseLayer}`}>
+			<div className={`${s.parallaxGroup}`} id={s.contactMe}>
+				<div className={`${s.parallaxLayer} ${s.midLayer}`} >
 					<ContactMe/>
 				</div>
-				<div className={`${s.parallaxLayer} ${s.midLayer}`}>
-					<img src={ContactMeBack} alt="Contact me background" />;
+				<div className={`${s.parallaxLayer} ${s.baseLayer}`}>
+					<img src={ContactMeBack} alt="Contact me background" />
 				</div>
 			</div>
 
-			<div className={`${s.parallaxGroup}`}>
+			<div>
 				<Footer/>
 			</div>
 		</div>
 	)
 };
 
-export default Main
+export default Main;

@@ -1,18 +1,11 @@
 @use "@/App/scss/utils/containers" as *;
 @use "@/App/scss/utils/mixins" as *;
-.background {
-  background:
-          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-          url("@/asset/images/ContactMe/backGroundContactMe.png") center/cover no-repeat;
-  height: 50vh;
-  position: relative;
-}
-.container {
+.content_container {
   width:  100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -45%);
+  //position: absolute;
+  //top: 0;
+  //left: 50%;
+  //transform: translate(-50%, -45%);
 
   max-width:  calc(var(--container-width) - 200px);
   margin: 0 auto;

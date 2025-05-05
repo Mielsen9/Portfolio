@@ -13,7 +13,7 @@ const Intro: React.FC<PropsType> = React.memo((p) => {
 
 	// Return
 	return (
-		<div className={s.conteiner}>
+		<header className={s.conteiner}>
 			<div className={s.wrapper}>
 				<Header style={"newStyle"}/>
 				<div className={s.aboutMeContainer}>
@@ -22,7 +22,7 @@ const Intro: React.FC<PropsType> = React.memo((p) => {
 				</div>
 				<SocialLinks/>
 			</div>
-		</div>
+		</header>
 	)
 });
 

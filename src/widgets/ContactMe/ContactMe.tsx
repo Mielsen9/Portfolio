@@ -9,9 +9,9 @@ const ContactMe: React.FC = (p) => {
 
 	// Return
 	return (
-		// <section className={s.background}>
-			<div className={s.wrapper}>
-				<div className={s.container}>
+		<section className={s.wrapper}>
+			<div className={s.container}>
+				<div className={s.content_container}>
 					<h4 className={s.contactTitle}>Contact</h4>
 					<div className={s.contactConteiner}>
 						<ContactText/>
@@ -20,7 +20,7 @@ const ContactMe: React.FC = (p) => {
 					<SocialLinks/>
 				</div>
 			</div>
-		// </section>
+		</section>
 	)
 };
 

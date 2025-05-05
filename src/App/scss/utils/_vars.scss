@@ -1,20 +1,9 @@
-:root {
-	--container-width: 870px;
-	--container-padding: 15px;
-
-	--font-main: "Manrope";
-	--font-size: 16px;
-
-	--page-bg: #fff;
-	--text-color: #FFF;
-}
-
 // Maket
 $maxWidth: 1980;
 $maxWidthContainer: 870;
 $minWidth: 320;
 
-$laptop-size: 1199px;
+$laptop-size: 1440px;
 $tablet-size: 768px;
 $mobile-size: 490px;
 
@@ -26,10 +15,5 @@ $breakpoints: (
   "tablet": 768px,
   "mtablet": 850px,
   "mlaptop": 1024px,
-  "laptop": 1199px,
+  "laptop": 1440px,
   );
-
-.dark {
-    --page-bg: #252526;
-    --text-color: #fff;
-}

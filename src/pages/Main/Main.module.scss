@@ -1,0 +1,19 @@
+.parallaxWrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+}
+.parallaxGroup {
+  position: relative;
+  height: 100vh;
+  transform-style:  preserve-3d;
+}
+.parallaxLayer {
+  position: absolute;
+  inset: 0;
+}
+
+#group_1 > .baseLayer{
+
+}

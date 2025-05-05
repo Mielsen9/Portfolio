@@ -14,33 +14,33 @@ const Main: React.FC = () => {
 	return (
 		<div className={s.parallaxWrapper}>
 
-			<div className={`${s.parallaxGroup}`}>
+			<div className={`${s.parallaxGroup}`} id={s.intro}>
 				<Intro/>
 			</div>
 
-			<div className={`${s.parallaxGroup}` } id={s.group_1}>
+			<div className={`${s.parallaxGroup}` }>
 				<div className={`${s.parallaxLayer} ${s.baseLayer}`}>
 					<ProfessionalSkills/>
 				</div>
 				<div className={`${s.parallaxLayer} ${s.midLayer}`}>
-					<ProfessionalSkillsBack/>
+					<img src={ProfessionalSkillsBack} alt="Contact me background" />;
 				</div>
 			</div>
 
-			<div className={`${s.parallaxGroup} ${s.projectsScreen}` }>
+			<div className={`${s.parallaxGroup}`}>
 				<Projects/>
 			</div>
 
-			<div className={`${s.parallaxGroup}`} id={s.group_2}>
+			<div className={`${s.parallaxGroup}`}>
 				<div className={`${s.parallaxLayer} ${s.baseLayer}`}>
 					<ContactMe/>
 				</div>
 				<div className={`${s.parallaxLayer} ${s.midLayer}`}>
-					<ContactMeBack/>
+					<img src={ContactMeBack} alt="Contact me background" />;
 				</div>
 			</div>
 
-			<div className={`${s.parallaxGroup}` }>
+			<div className={`${s.parallaxGroup}`}>
 				<Footer/>
 			</div>
 		</div>

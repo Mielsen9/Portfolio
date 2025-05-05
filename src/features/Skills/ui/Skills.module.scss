@@ -5,3 +5,8 @@
   flex-direction: column;
   gap: 10px;
 }
+@include mobile {
+    .container {
+      width: calc(100% - 20px);
+    }
+}

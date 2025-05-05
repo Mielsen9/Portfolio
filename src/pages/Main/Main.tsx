@@ -5,6 +5,7 @@ import Intro from "@/widgets/Intro/Intro";
 import ProfessionalSkills from "@/widgets/ProfessionalSkills/ProfessionalSkills";
 import ContactMe from "@/widgets/ContactMe/ContactMe";
 import Footer from "@/widgets/Footer/Footer";
+import Projects from "@/widgets/Projects/Projects";
 type PropsType = {
 
 };
@@ -17,6 +18,7 @@ const Main: React.FC<PropsType> = React.memo((p) => {
 			{/*<Header/>*/}
 			<Intro/>
 			<ProfessionalSkills/>
+			<Projects/>
 			<ContactMe/>
 			<Footer/>
 		</div>

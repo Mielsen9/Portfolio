@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
 
   max-width:  calc(var(--container-width) - 200px);
   margin: 0 auto;
@@ -30,6 +30,11 @@
   font-size: 32px;
 }
 
+//@include laptop {
+//  .container {
+//    transform: translate(-50%, -35%);
+//  }
+//}
 @include tablet {
   .container {
     width: 80%;
@@ -38,6 +43,6 @@
     flex-direction: column-reverse;
   }
   .contactTitle {
-    margin: 20px auto;
+    margin: 0 auto;
   }
 }

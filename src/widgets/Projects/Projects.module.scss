@@ -1,0 +1,50 @@
+@use "@/App/scss/utils/containers" as *;
+@use "@/App/scss/utils/mixins" as *;
+.backGround {
+  background-color: dimgray;
+}
+.container {
+  height: 100vh;
+}
+.upContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 57%;
+  width: 100%;
+}
+.sectionTitleContainer {
+  margin: 20px;
+}
+.projectsContainer {
+  display: flex;
+  height: 290px;
+  width: 100%;
+}
+.project {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  background-color: #ff6b6b;
+}
+@include tablet {
+  .container {
+    height: calc(100vh + 300px);
+  }
+  .upContainer {
+    height: 100%;
+    justify-content: start;
+  }
+  .sectionTitleContainer {
+    margin: 10px;
+  }
+  .projectsContainer {
+    flex-direction: column;
+    height: 58%;
+    width: 290px;
+  }
+  .project {
+    background-color: #ff6b6b;
+  }
+}

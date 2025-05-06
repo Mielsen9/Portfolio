@@ -1,4 +1,4 @@
-import {Skill} from "@/features/Skills/type/type";
+import {Skill} from "../type/type";
 
 export const SkillsList: Skill[] = [
 	{ name: 'HTML', level: 85 },

@@ -13,9 +13,10 @@
   align-items: center;
   height: 57%;
   width: 100%;
+  padding: 10px 0;
 }
 .sectionTitleContainer {
-  margin: 20px;
+  margin: 10px;
 }
 .projectsContainer {
   display: flex;
@@ -36,15 +37,9 @@
     height: 100%;
     justify-content: start;
   }
-  .sectionTitleContainer {
-    margin: 10px;
-  }
   .projectsContainer {
     flex-direction: column;
     height: 58%;
     width: 290px;
-  }
-  .project {
-    background-color: #ff6b6b;
   }
 }

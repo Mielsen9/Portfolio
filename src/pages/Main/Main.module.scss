@@ -51,15 +51,13 @@
 }
 
 .professionalSkillsBackground {
-  background-image: url("@/asset/images/Skills/SkillsBack.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("@/asset/images/Skills/SkillsBack.png") center/cover no-repeat;
 }
 
 .contactMeBackground {
-  background-image: url("@/asset/images/ContactMe/backGroundContactMe.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  background:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("@/asset/images/ContactMe/backGroundContactMe.png") bottom/cover no-repeat;
 }

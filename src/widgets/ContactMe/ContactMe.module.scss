@@ -2,10 +2,10 @@
 @use "@/App/scss/utils/mixins" as *;
 .content_container {
   width:  100%;
-  //position: absolute;
-  //top: 0;
-  //left: 50%;
-  //transform: translate(-50%, -45%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 45%);
 
   max-width:  calc(var(--container-width) - 200px);
   margin: 0 auto;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import * as s from "./Main.module.scss"
 import Intro from "@/widgets/Intro/Intro";
 import ProfessionalSkills from "@/widgets/ProfessionalSkills/ProfessionalSkills";
@@ -7,12 +7,19 @@ import Footer from "@/widgets/Footer/Footer";
 import Projects from "@/widgets/Projects/Projects";
 import ProfessionalSkillsBack from "@/asset/images/Skills/SkillsBack.png"
 import ContactMeBack from "@/asset/images/ContactMe/backGroundContactMe.png"
+import {useStopScroll} from "@/shared/hook/StopScroll/useStopScroll";
 // Main
 const Main: React.FC = () => {
+	const wrapperRef = useRef<HTMLDivElement>(null);
+	const footerRef = useRef<HTMLDivElement>(null);
 
+	useStopScroll({
+		containerRef: wrapperRef,
+		stopPointRef: footerRef
+	});
 	// Return
 	return (
-		<div className={s.parallaxWrapper}>
+		<div className={s.parallaxWrapper} ref={wrapperRef}>
 
 			<div id={s.intro}>
 				<Intro/>
@@ -22,12 +29,10 @@ const Main: React.FC = () => {
 				<div className={`${s.parallaxLayer} ${s.midLayer}`}>
 					<ProfessionalSkills/>
 				</div>
-				<div className={`${s.parallaxLayer} ${s.baseLayer}`}>
-					<img src={ProfessionalSkillsBack} alt="Contact me background" />
-				</div>
+				<div className={`${s.parallaxLayer} ${s.baseLayer} ${s.professionalSkillsBackground}`} />
 			</div>
 
-			<div className={`${s.parallaxGroup}`} id={s.projects}>
+			<div className={`${s.parallaxGroup}`} >
 				<Projects/>
 			</div>
 
@@ -35,12 +40,10 @@ const Main: React.FC = () => {
 				<div className={`${s.parallaxLayer} ${s.midLayer}`} >
 					<ContactMe/>
 				</div>
-				<div className={`${s.parallaxLayer} ${s.baseLayer}`}>
-					<img src={ContactMeBack} alt="Contact me background" />
-				</div>
+				<div className={`${s.parallaxLayer} ${s.baseLayer} ${s.contactMeBackground}`} />
 			</div>
 
-			<div>
+			<div ref={footerRef}>
 				<Footer/>
 			</div>
 		</div>

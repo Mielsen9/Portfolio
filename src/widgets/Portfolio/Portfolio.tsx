@@ -1,12 +1,15 @@
 import React from "react";
-import * as s from "./Projects.module.scss"
+import * as s from "./Portfolio.module.scss"
 import SectionTitle from "@/shared/ui/SectionTitle/SectionTitle";
+import {ProjectList} from "@/features/ProgectList";
+import AboutMe from "@/entities/About me/AboutMe";
+import ContactMe from "@/widgets/ContactMe/ContactMe";
 // Type
 type PropsType = {
 
 };
 // Projects
-const Projects: React.FC<PropsType> = React.memo((p) => {
+const Portfolio: React.FC<PropsType> = React.memo((p) => {
 
 	// Return
 	return (
@@ -20,15 +23,12 @@ const Projects: React.FC<PropsType> = React.memo((p) => {
 							subtitle="My latest work"
 						/>
 					</div>
-					<div className={s.projectsContainer}>
-						<div className={s.project}></div>
-						<div className={s.project}></div>
-						<div className={s.project}></div>
-					</div>
+					<ProjectList/>
 				</div>
+				<ContactMe/>
 			</section>
 		</div>
 	)
 });
 
-export default Projects
+export default Portfolio

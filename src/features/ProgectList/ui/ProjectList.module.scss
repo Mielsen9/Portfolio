@@ -1,0 +1,22 @@
+@use "@/App/scss/utils/mixins" as *;
+.container {
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.container > .item {
+  flex: 0 0 calc(100% / 3); /* 3 в ряд */
+  box-sizing: border-box;
+}
+.containerLarge {
+  height: 200px;
+  width: 100%;
+}
+@include tablet {
+  .container {
+    flex-direction: column;
+    height: 58%;
+    width: 290px;
+  }
+}

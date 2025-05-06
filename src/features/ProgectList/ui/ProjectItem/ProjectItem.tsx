@@ -1,17 +1,17 @@
 import React from "react";
 import * as s from "./ProjectItem.module.scss"
-// Type
-type PropsType = {
-
-};
+import {Project} from "../../type/type";
 // ProjectItem
-const ProjectItem: React.FC<PropsType> = React.memo((p) => {
+const ProjectItem: React.FC<Project> = React.memo((p) => {
 
 	// Return
 	return (
-		<div className={s.container}>
-
-		</div>
+		<a className={s.container}
+		   style={{background: "red"}}
+		   href={p.link}
+		>
+			<h5 className={s.title}>{p.name}</h5>
+		</a>
 	)
 });
 

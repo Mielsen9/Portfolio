@@ -4,30 +4,19 @@
   background-color: dimgray;
 }
 .container {
-  height: 100vh;
+  height: 130vh;
 }
 .upContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 57%;
+  height: 60%;
   width: 100%;
   padding: 10px 0;
 }
 .sectionTitleContainer {
   margin: 10px;
-}
-.projectsContainer {
-  display: flex;
-  height: 290px;
-  width: 100%;
-}
-.project {
-  height: 100%;
-  width: 100%;
-  flex: 1;
-  background-color: #ff6b6b;
 }
 @include tablet {
   .container {
@@ -36,10 +25,5 @@
   .upContainer {
     height: 100%;
     justify-content: start;
-  }
-  .projectsContainer {
-    flex-direction: column;
-    height: 58%;
-    width: 290px;
   }
 }

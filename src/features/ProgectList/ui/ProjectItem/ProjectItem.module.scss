@@ -1,6 +1,20 @@
 .container {
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
-  background-color: #ff6b6b;
+}
+.title {
+  font-size:  30px;
+  margin-top: 50%;
+  display: none;
+}
+.container:hover {
+  filter: brightness(0.9);
+}
+.container:hover > .title {
+  display: block;
+  color: #FFFFFF;
 }

@@ -32,14 +32,12 @@ const Main: React.FC = () => {
 				<div className={`${s.parallaxLayer} ${s.baseLayer} ${s.professionalSkillsBackground}`} />
 			</div>
 
-			<div className={`${s.parallaxGroup}`} >
+			<div className={`${s.parallaxGroup}`} id={s.projects}>
 				<Projects/>
+				<ContactMe/>
 			</div>
 
-			<div className={`${s.parallaxGroup}`} id={s.contactMe}>
-				<div className={`${s.parallaxLayer} ${s.midLayer}`} >
-					<ContactMe/>
-				</div>
+			<div className={`${s.parallaxGroup}`} id={s.contactMe} >
 				<div className={`${s.parallaxLayer} ${s.baseLayer} ${s.contactMeBackground}`} />
 			</div>
 

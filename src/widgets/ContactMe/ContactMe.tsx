@@ -10,15 +10,13 @@ const ContactMe: React.FC = (p) => {
 	// Return
 	return (
 		<section className={s.wrapper}>
-			<div className={s.container}>
-				<div className={s.content_container}>
-					<h4 className={s.contactTitle}>Contact</h4>
-					<div className={s.contactConteiner}>
-						<ContactText/>
-						<ContactForm/>
-					</div>
-					<SocialLinks/>
+			<div className={s.content_container}>
+				<h4 className={s.contactTitle}>Contact</h4>
+				<div className={s.contactConteiner}>
+					<ContactText/>
+					<ContactForm/>
 				</div>
+				<SocialLinks/>
 			</div>
 		</section>
 	)

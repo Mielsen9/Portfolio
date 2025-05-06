@@ -1,18 +1,19 @@
 @use "@/App/scss/utils/containers" as *;
 @use "@/App/scss/utils/mixins" as *;
+
 .content_container {
   width:  100%;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, 45%);
+  transform: translate(-50%, 55%);
 
   max-width:  calc(var(--container-width) - 200px);
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
   background-color: grey;
-  z-index: 2;
+  z-index: 6;
 }
 .contactConteiner {
   display: flex;
@@ -23,14 +24,10 @@
   font-size: 32px;
 }
 
-//@include laptop {
-//  .container {
-//    transform: translate(-50%, -35%);
-//  }
-//}
 @include tablet {
-  .container {
+  .content_container {
     width: 80%;
+    transform: translate(-50%, 100%);
   }
   .contactConteiner {
     flex-direction: column-reverse;

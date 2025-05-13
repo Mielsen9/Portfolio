@@ -4,7 +4,7 @@ import Intro from "@/widgets/Intro/Intro";
 import ProfessionalSkills from "@/widgets/ProfessionalSkills/ProfessionalSkills";
 import ContactMe from "@/widgets/ContactMe/ContactMe";
 import Footer from "@/widgets/Footer/Footer";
-import Portfolio from "@/widgets/Portfolio/Portfolio";
+import SectionPortfolio from "@/widgets/SectionPortfolio/SectionPortfolio";
 import {useStopScroll} from "@/shared/hook/StopScroll/useStopScroll";
 // Main
 const Main: React.FC = () => {
@@ -31,7 +31,7 @@ const Main: React.FC = () => {
 			</div>
 
 			<div className={`${s.parallaxGroup}`} id={s.projects}>
-				<Portfolio/>
+				<SectionPortfolio/>
 			</div>
 
 			<div className={`${s.parallaxGroup}`} id={s.contactMe} >

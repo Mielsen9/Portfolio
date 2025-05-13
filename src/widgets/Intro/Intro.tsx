@@ -20,7 +20,9 @@ const Intro: React.FC<PropsType> = React.memo((p) => {
 					<MyImage/>
 					<AboutMe/>
 				</div>
-				<SocialLinks/>
+				<div className={s.socialLinks}>
+					<SocialLinks/>
+				</div>
 			</div>
 		</header>
 	)

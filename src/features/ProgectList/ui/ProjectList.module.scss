@@ -10,13 +10,34 @@
   box-sizing: border-box;
 }
 .containerLarge {
-  height: 200px;
+  display: flex;
   width: 100%;
+  flex-wrap: wrap;
+}
+.containerLarge > .item {
+  flex: 0 0 calc(100% / 3); /* 3 в ряд */
+  box-sizing: border-box;
+  height: 300px;
 }
 @include tablet {
   .container {
     flex-direction: column;
     height: 58%;
     width: 290px;
+
+    .item {
+      flex: 0 0 auto; // або просто auto
+      width: 100%; // або потрібна ширина
+    }
+  }
+
+  .containerLarge {
+    flex-direction: column;
+    width: 290px;
+
+    .item {
+      flex: 0 0 auto;
+      width: 100%;
+    }
   }
 }

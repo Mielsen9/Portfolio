@@ -19,6 +19,10 @@
   border-radius: 10px;
   overflow: hidden;
 }
+.socialLinks {
+  margin: 0 auto;
+  width: calc(100% - 35px);
+}
 @include tablet {
   .aboutMeContainer {
     flex-direction: column-reverse;

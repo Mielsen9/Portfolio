@@ -16,7 +16,9 @@ export const ProjectList : React.FC<ProjectListProps>= React.memo((p) => {
 			{(p.size === "large" ? ProjectArray : ProjectArray.slice(0, 3)).map((project: Project) => (
 				<div className={s.item}>
 					<ProjectItem name={project.name}
+					             technologies={project.technologies}
 					             description={project.description}
+					             functionality={project.functionality}
 					             link={project.link}
 					             image={project.image}
 					/>

@@ -7,8 +7,10 @@ const ProjectItem: React.FC<Project> = React.memo((p) => {
 	// Return
 	return (
 		<a className={s.container}
-		   style={{background: "red"}}
+		   style={{ backgroundImage: `url(${p.image})` }}
 		   href={p.link}
+		   target="_blank"
+		   rel="noopener noreferrer"
 		>
 			<h5 className={s.title}>{p.name}</h5>
 		</a>

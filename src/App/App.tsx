@@ -1,12 +1,12 @@
 import React from "react";
 import * as s from "./App.module.scss";
-import Main from "@/pages/Main/Main";
+import {Outlet} from "react-router-dom";
 
 // App
 const App:React.FC = () => {
     return (
         <div>
-            <Main/>
+            <Outlet />
         </div>
     );
 };

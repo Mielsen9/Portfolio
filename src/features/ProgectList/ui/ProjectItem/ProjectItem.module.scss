@@ -1,22 +1,38 @@
 .container {
+  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0); // прозорий
+    transition: background-color 0.3s ease;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    background-color: rgba(0, 0, 0, 0.4); // затемнення
+  }
+
+  &:hover .title {
+    display: block;
+  }
 }
+
 .title {
-  font-size:  30px;
-  margin-top: 50%;
+  position: relative;
+  z-index: 2;
   display: none;
-}
-.container:hover {
-  filter: brightness(0.9);
-}
-.container:hover > .title {
-  display: block;
-  color: #FFFFFF;
+  font-size: 30px;
+  margin-top: 30%;
+  color: white;
 }

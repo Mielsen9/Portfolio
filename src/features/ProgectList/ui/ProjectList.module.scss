@@ -1,12 +1,13 @@
 @use "@/App/scss/utils/mixins" as *;
 .container {
   display: flex;
-  height: 35vh;
+  gap: 10px;
+  height: 40vh;
   width: 100%;
   flex-wrap: wrap;
 }
 .container > .item {
-  flex: 0 0 calc(100% / 3); /* 3 в ряд */
+  flex: 0 0 calc((100% - 20px) / 3); /* 3 в ряд */
   box-sizing: border-box;
 }
 .containerLarge {
@@ -15,9 +16,10 @@
   flex-wrap: wrap;
 }
 .containerLarge > .item {
-  flex: 0 0 calc(100% / 3); /* 3 в ряд */
+  flex: 0 0 calc((100% - 30px) / 3); /* 3 в ряд */
+  margin: 5px;
   box-sizing: border-box;
-  height: 300px;
+  height: 380px;
 }
 @include tablet {
   .container {

@@ -1,5 +1,12 @@
 import {Project} from "../type/type";
 import Recipes from "@/asset/gulp/images/Projects/Recipes/RecipeTablet.png"
+import CoinKeeper from "@/asset/gulp/images/Projects/CoinKeeper/CoinKeeperTablet.png"
+import ToDoList from "@/asset/gulp/images/Projects/ToDoList/ToDoLiostTablet.png"
+import ResumePZvir from "@/asset/gulp/images/Projects/Resume/ResumeTablet.png"
+import CleverStudy from "@/asset/gulp/images/Projects/Clever/CleverTablet.png"
+import Vpn from "@/asset/gulp/images/Projects/VPN/VPNTablet.png"
+import Simpeco from "@/asset/gulp/images/Projects/Simpeco/Simpeco.png"
+
 export const ProjectArray: Project[] = [
 	{
 		name: "Recipes",
@@ -32,7 +39,8 @@ export const ProjectArray: Project[] = [
 			"Керування станом через Redux Toolkit"
 		],
 		myRole: "Повний цикл розробки: архітектура, логіка, інтерфейс",
-		link: "https://mielsen9.github.io/CoinKepeer/"
+		link: "https://mielsen9.github.io/CoinKepeer/",
+		image: CoinKeeper
 	},
 	{
 		name: "ToDoList",
@@ -50,7 +58,7 @@ export const ProjectArray: Project[] = [
 			"Юніт-тестування бізнес-логіки через Jest"
 		],
 		link: "https://mielsen9.github.io/ToDoList/",
-		image: "https://www.sdf.com"
+		image: ToDoList
 	},
 	{
 		name: "ResumePZvir",
@@ -60,7 +68,7 @@ export const ProjectArray: Project[] = [
 			"Автоматизовано робочі процеси за допомогою Gulp для оптимізації зображень, препроцесінгу SCSS і бандлінгу скриптів, що значно підвищило ефективність розробки.",
 		functionality: [],
 		link: "https://mielsen9.github.io/ResumePZvir/",
-		image: "https://www.sdf.com"
+		image: ResumePZvir
 	},
 	{
 		name: "CleverStudy",
@@ -68,7 +76,7 @@ export const ProjectArray: Project[] = [
 		description: "Простий адаптивний лендінг з дотриманням семантичної розмітки, кросбраузерної сумісності та оптимальної продуктивності, що покращило користувацький досвід, створений на чистому HTML, CSS та JavaScript з використанням методології BEM.",
 		functionality: [],
 		link: "https://mielsen9.github.io/CleverStudy/",
-		image: "https://www.sdf.com"
+		image: CleverStudy
 	},
 	{
 		name: "Vpn",
@@ -78,7 +86,7 @@ export const ProjectArray: Project[] = [
 			"Стилі організовано модульно за допомогою SCSS із використанням змінних і міксинів для масштабованості та зручності оновлень.",
 		functionality: [],
 		link: "https://mielsen9.github.io/vpn/",
-		image: "https://www.sdf.com"
+		image: Vpn
 	},
 	{
 		name: "Simpeco",
@@ -86,7 +94,7 @@ export const ProjectArray: Project[] = [
 		description: "Лендінг для компанії Simpeco, реалізований на чистому HTML, SCSS та JavaScript.",
 		functionality: [],
 		link: "https://mielsen9.github.io/Simpeco/",
-		image: "https://www.sdf.com"
+		image: Simpeco
 	},
 	{   name: "Bose",
 		technologies: ["HTML", "CSS"],

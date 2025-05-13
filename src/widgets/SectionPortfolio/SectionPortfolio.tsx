@@ -12,7 +12,7 @@ const SectionPortfolio: React.FC<PropsType> = React.memo((p) => {
 
 	// Return
 	return (
-		<div className={s.backGround}>
+		<div className={s.backGround} id={"portfolio"}>
 			<section className={`${s.wrapper} ${s.container}`}>
 				<div className={s.upContainer}>
 					<div className={s.sectionTitleContainer}>

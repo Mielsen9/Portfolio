@@ -13,7 +13,7 @@ const Intro: React.FC<PropsType> = React.memo((p) => {
 
 	// Return
 	return (
-		<header className={s.conteiner}>
+		<header className={s.conteiner} id={'intro'}>
 			<div className={s.wrapper}>
 				<Header style={"newStyle"}/>
 				<div className={s.aboutMeContainer}>

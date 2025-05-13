@@ -1,11 +1,13 @@
 import {Project} from "../type/type";
-import Recipes from "@/asset/gulp/images/Projects/Recipes/RecipeTablet.png"
-import CoinKeeper from "@/asset/gulp/images/Projects/CoinKeeper/CoinKeeperTablet.png"
-import ToDoList from "@/asset/gulp/images/Projects/ToDoList/ToDoLiostTablet.png"
-import ResumePZvir from "@/asset/gulp/images/Projects/Resume/ResumeTablet.png"
-import CleverStudy from "@/asset/gulp/images/Projects/Clever/CleverTablet.png"
-import Vpn from "@/asset/gulp/images/Projects/VPN/VPNTablet.png"
-import Simpeco from "@/asset/gulp/images/Projects/Simpeco/Simpeco.png"
+import Recipes from "@/asset/images/Projects/Recipes/RecipeTablet.png"
+import CoinKeeper from "@/asset/images/Projects/CoinKeeper/CoinKeeperTablet.png"
+import ToDoList from "@/asset/images/Projects/ToDoList/ToDoLiostTablet.png"
+import ResumePZvir from "@/asset/images/Projects/Resume/ResumeTablet.png"
+import CleverStudy from "@/asset/images/Projects/Clever/CleverTablet.png"
+import Vpn from "@/asset/images/Projects/VPN/VPNTablet.png"
+import Simpeco from "@/asset/images/Projects/Simpeco/Simpeco.png"
+import Bose from "@/asset/images/Projects/Bose/Bose.png"
+import Portfolio from "@/asset/images/Projects/Portfolio/tablet.png"
 
 export const ProjectArray: Project[] = [
 	{
@@ -101,13 +103,13 @@ export const ProjectArray: Project[] = [
 		description: "Лендінг, реалізований на чистому HTML, CSS",
 		functionality: [],
 		link: "https://mielsen9.github.io/Bose/",
-		image: "https://www.sdf.com"
+		image: Bose
 	},
 	{   name: "Portfolio",
 		technologies: [],
 		description: "not found",
 		functionality: [],
 		link: "https://www.#.com",
-		image: "https://www.sdf.com"
+		image: Portfolio
 	},
 ];

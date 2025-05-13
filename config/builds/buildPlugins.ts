@@ -17,7 +17,7 @@ export function buildPlugins({mode, paths, analyzer, platform}:BuildOptions): Co
         // Base Plugins
         new HtmlWebpackPlugin({
             template: paths.html,
-            favicon:path.resolve(paths.public, 'favicon.png')
+            favicon:path.resolve(paths.public, 'favicon.svg')
         }),
         new webpack.DefinePlugin({
             // if(__PLATFORM__ === 'desktop')

@@ -11,8 +11,7 @@ const ProfessionalSkills: React.FC<PropsType> = React.memo((p) => {
 
 	// Return
 	return (
-		// <section className={s.backGround}>
-			<div className={s.wrapper}>
+			<div className={s.wrapper} id={'skills'}>
 				<div className={s.container}>
 					<SectionTitle
 						number= "01"
@@ -23,7 +22,6 @@ const ProfessionalSkills: React.FC<PropsType> = React.memo((p) => {
 
 				</div>
 			</div>
-		// </section>
 	)
 });
 

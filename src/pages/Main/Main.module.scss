@@ -45,8 +45,14 @@
 
 @include tablet {
   #contactMe {
-    height: 86vh;
-    transform: translateZ(-300px) translateY(230px) scale(2);
+    height: 130vh;
+    transform: translateZ(-300px) translateY(530px) scale(2);
+  }
+}
+@include mobile {
+  #contactMe {
+    height: 150vh;
+    transform: translateZ(-300px) translateY(530px) scale(2);
   }
 }
 

@@ -9,7 +9,7 @@ const ContactMe: React.FC = (p) => {
 
 	// Return
 	return (
-		<section className={s.wrapper}>
+		<section className={s.wrapper} id={'communicate'}>
 			<div className={s.content_container}>
 				<h4 className={s.contactTitle}>Contact</h4>
 				<div className={s.contactConteiner}>

@@ -29,20 +29,20 @@ export const ContactForm: React.FC = React.memo((p) => {
 			<div className={s["contact-form-wrapper"]}>
 
 			<form onSubmit={handleSubmit(onSubmit)} className={s["contact-form"]}>
-				<div className="contact-form__row">
-					<div>
-						<input {...register("firstName")} placeholder="First name *" />
-						<p className={s["error"]}>{errors.firstName?.message}</p>
-					</div>
-					<div>
-						<input {...register("lastName")} placeholder="Last name *" />
-						<p className={s["error"]}>{errors.lastName?.message}</p>
-					</div>
-				</div>
-
-				<div>
-					<input {...register("email")} placeholder="Email *" />
-					<p className={s["error"]}>{errors.email?.message}</p>
+				<div className={s["contact-form__row"]}>
+					<input
+						className={errors.firstName ? s.error : ""}
+						{...register("firstName")}
+						placeholder="First name *"
+					/>
+					<input  className={errors.lastName ? s.error : ""}
+					        {...register("lastName")}
+					        placeholder="Last name *"
+					/>
+					<input className={errors.email ? s.error : ""}
+					       {...register("email")}
+					       placeholder="Email *"
+						/>
 				</div>
 
 				<div className={s["phone-group"]}>

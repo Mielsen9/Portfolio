@@ -2,13 +2,8 @@ import React from "react";
 import * as s from "./SectionPortfolio.module.scss"
 import SectionTitle from "@/shared/ui/SectionTitle/SectionTitle";
 import {ProjectList} from "@/features/ProgectList";
-import ContactMe from "@/widgets/ContactMe/ContactMe";
-// Type
-type PropsType = {
-
-};
 // SectionPortfolio
-const SectionPortfolio: React.FC<PropsType> = React.memo((p) => {
+const SectionPortfolio: React.FC = () => {
 
 	// Return
 	return (
@@ -25,10 +20,9 @@ const SectionPortfolio: React.FC<PropsType> = React.memo((p) => {
 					</div>
 					<ProjectList/>
 				</div>
-				<ContactMe/>
 			</section>
 		</div>
 	)
-});
+};
 
 export default SectionPortfolio

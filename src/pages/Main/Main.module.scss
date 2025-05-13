@@ -37,23 +37,28 @@
 #projects {
   z-index: 0;
 }
-#contactMe {
+#ContactMe {
+  z-index: 1;
+}
+#footer {
   z-index: -2;
   height: 90vh;
   transform: translateZ(-300px) translateY(270px) scale(2);
 }
 
 @include tablet {
-  #contactMe {
+  #footer {
     height: 130vh;
-    transform: translateZ(-300px) translateY(530px) scale(2);
   }
 }
 @include mobile {
-  #contactMe {
+  #footer {
     height: 150vh;
-    transform: translateZ(-300px) translateY(530px) scale(2);
   }
+}
+
+.contactMe {
+  position: relative;
 }
 
 .professionalSkillsBackground {

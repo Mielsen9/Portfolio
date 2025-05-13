@@ -34,7 +34,11 @@ const Main: React.FC = () => {
 				<SectionPortfolio/>
 			</div>
 
-			<div className={`${s.parallaxGroup}`} id={s.contactMe} >
+			<div className={`${s.contactMe}`} id={s.ContactMe}>
+				<ContactMe/>
+			</div>
+
+			<div className={`${s.parallaxGroup}`} id={s.footer} >
 				<div className={`${s.parallaxLayer} ${s.baseLayer} ${s.contactMeBackground}`} />
 			</div>
 

@@ -128,7 +128,7 @@ export const ProjectArray: Project[] = [
 			"взаємодії з користувачем. Сайт демонструє професійні навички та " +
 			"виконані проєкти.",
 		functionality: ["Paralax"],
-		link: "https://www.#.com",
+		link: "https://mielsen9.github.io/Portfolio/",
 		image: Portfolio
 	},
 ];

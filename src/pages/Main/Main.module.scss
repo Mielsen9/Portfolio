@@ -1,6 +1,6 @@
 @use "@/App/scss/utils/mixins" as *;
 .parallaxWrapper {
-  height: 100vh;
+  height: 100svh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 300px;
@@ -42,24 +42,24 @@
 }
 #footer {
   z-index: -2;
-  height: 90vh;
+  height: 90svh;
   transform: translateZ(-300px) translateY(270px) scale(2);
 }
 
 @include tablet {
   #footer {
-    height: 130vh;
+    height: 130svh;
   }
 }
 @include mobile {
   #footer {
-    height: 150vh;
+    height: 150svh;
   }
 }
 // Media Query
 @media (max-height: 740px) {
   #footer {
-    height: 200vh;
+    height: 200svh;
   }
 }
 

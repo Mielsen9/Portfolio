@@ -1,7 +1,7 @@
 @use "@/App/scss/utils/containers" as *;
 @use "@/App/scss/utils/mixins" as *;
 .conteiner {
-  height: 100vh;
+  height: 100svh;
   display: flex;
   align-items: center;
   background-image: url("@/asset/images/intro/Intro.jpg");
@@ -27,6 +27,11 @@
   display: flex;
   align-items:center;
   justify-content: center;
+  padding: 20px;
+  width: 200%;
+}
+.myImage {
+  width: 100%;
 }
 @include tablet {
   .aboutMeContainer {

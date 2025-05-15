@@ -19,9 +19,29 @@ export const ContactForm: React.FC = React.memo((p) => {
 
 	const [selectedCountry, setSelectedCountry] = useState(countries[0]);
 
-	const onSubmit = (data: FormData) => {
-		console.log({ ...data, countryCode: selectedCountry.value });
-		reset();
+	const onSubmit = async (data: FormData) => {
+		const payload = {
+			...data,
+			countryCode: selectedCountry.value,
+		};
+
+		try {
+			const res = await fetch("https://formspree.io/f/xnndlroa", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(payload),
+			});
+
+			if (res.ok) {
+				reset();
+			} else {
+				console.error("Form submission error:", await res.text());
+			}
+		} catch (error) {
+			console.error("Form submission failed:", error);
+		}
 	};
 
 	// Return

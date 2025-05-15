@@ -20,8 +20,8 @@
     flex-direction: column;
     background-color: #252526;
     position: absolute;
-    top: 0;
-    right: -1px;
+    top: -5px;
+    right: -5px;
     //transform: translateY(-100%);
     transform: scale(0); // спочатку згорнуте
     transform-origin: top right; // розгортання з верхнього краю
@@ -31,6 +31,6 @@
 .navList.active {
   //transform: translateY(0);
   transform: scale(1); // повністю розгорнуте
-  height: 90vh;
-  width: 98%;
+  height: 92vh;
+  width: 99%;
 }

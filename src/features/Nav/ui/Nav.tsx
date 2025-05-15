@@ -14,7 +14,10 @@ export const Nav: React.FC = () => {
 
 				{NAV_ITEM.map((navItem: NavItemType, index: number) => (
 					<NavItem key={index}
-					         href={navItem.href}>{navItem.name}
+					         href={navItem.href}
+					         onClick={navToggleHandler}
+					>
+						{navItem.name}
 					</NavItem>
 				))}
 

@@ -5,15 +5,16 @@ import * as s from "./NavItem.module.scss";
 type PropsType = {
 	href?: string;
 	id?: string;
+	onClick?: () => void;
 	children: React.ReactNode;
 };
 
 // NavItem
-const NavItem: React.FC<PropsType> = React.memo(({ href = "#", id, children }) => {
+const NavItem: React.FC<PropsType> = React.memo(({ href = "#", id, children, onClick}) => {
 	// Return
 	return (
 		<li>
-			<a href={href} className={s.navLink} data-goto={id}>
+			<a href={href} className={s.navLink} onClick={onClick} data-goto={id}>
 				{children}
 			</a>
 		</li>

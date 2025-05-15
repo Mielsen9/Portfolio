@@ -17,8 +17,12 @@ const Intro: React.FC<PropsType> = React.memo((p) => {
 			<div className={s.wrapper}>
 				<Header style={"newStyle"}/>
 				<div className={s.aboutMeContainer}>
-					<MyImage/>
-					<AboutMe/>
+					<div className={s.myImage}>
+						<MyImage/>
+					</div>
+					<div className={s.aboutMe}>
+						<AboutMe/>
+					</div>
 				</div>
 				<div className={s.socialLinks}>
 					<SocialLinks/>

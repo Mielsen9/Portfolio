@@ -23,6 +23,11 @@
   margin: 0 auto;
   width: calc(100% - 35px);
 }
+.aboutMe {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
 @include tablet {
   .aboutMeContainer {
     flex-direction: column-reverse;
@@ -30,5 +35,8 @@
     align-items: center;
     height: 67vh;
     max-width: 450px;
+  }
+  .myImage {
+    height:  78%;
   }
 }

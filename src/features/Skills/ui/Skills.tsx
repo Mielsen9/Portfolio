@@ -12,9 +12,14 @@ export const Skills: React.FC<PropsType> = React.memo((p) => {
 	// Return
 	return (
 		<ul className={s.container}>
+
 			{SkillsList.map((skill) => (
-				<SkillItem key={skill.name} name={skill.name} level={skill.level} />
+				<SkillItem key={skill.name}
+				           name={skill.name}
+				           level={skill.level}
+				/>
 			))}
+
 		</ul>
 	)
 });

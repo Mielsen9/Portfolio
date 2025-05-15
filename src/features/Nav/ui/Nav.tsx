@@ -11,9 +11,13 @@ export const Nav: React.FC = () => {
 	return (
 		<nav className={s.nav}>
 			<ul className={`${s.navList} ${navToggle ? s.active : ""}`}>
+
 				{NAV_ITEM.map((navItem: NavItemType, index: number) => (
-					<NavItem key={index} href={navItem.href}>{navItem.name}</NavItem>
+					<NavItem key={index}
+					         href={navItem.href}>{navItem.name}
+					</NavItem>
 				))}
+
 			</ul>
 			<NavBtn onClick={navToggleHandler} toggle={navToggle}/>
 		</nav>

@@ -56,6 +56,12 @@
     height: 150vh;
   }
 }
+// Media Query
+@media (max-height: 670px) {
+  #footer {
+    height: 200vh;
+  }
+}
 
 .contactMe {
   position: relative;

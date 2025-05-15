@@ -6,7 +6,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -130%);
 
   max-width:  calc(var(--container-width) - 200px);
   margin: 0 auto;
@@ -27,7 +27,6 @@
 @include tablet {
   .content_container {
     width: 80%;
-    transform: translate(-50%, 70%);
   }
   .contactConteiner {
     flex-direction: column-reverse;
@@ -38,6 +37,12 @@
 }
 @include mobile {
   .content_container {
-    top: 120px;
+    transform: translate(-50%, -120%);
+  }
+}
+// Media Query
+@media (max-height: 670px) {
+  .content_container {
+    transform: translate(-50%, -105%);
   }
 }

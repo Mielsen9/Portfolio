@@ -27,3 +27,9 @@
     justify-content: start;
   }
 }
+// Media Query
+@media (max-height: 670px) {
+  .container {
+    height: calc(100vh + 1000px);
+  }
+}

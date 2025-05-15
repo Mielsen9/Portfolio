@@ -20,11 +20,11 @@
     flex-direction: column;
     background-color: #252526;
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: 0;
+    right: -3px;
     //transform: translateY(-100%);
-    transform: scale(0); // спочатку згорнуте
-    transform-origin: top right; // розгортання з верхнього краю
+    transform: translateY(-110%); // спочатку згорнуте
+    transform-origin: top ; // розгортання з верхнього краю
     transition: transform 0.5s ease-in-out;
   }
 }

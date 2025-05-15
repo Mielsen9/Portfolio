@@ -2,6 +2,7 @@ import React from "react";
 import * as s from "./Portfolio.module.scss"
 import SectionTitle from "@/shared/ui/SectionTitle/SectionTitle";
 import {ProjectList} from "@/features/ProgectList";
+import Footer from "@/widgets/Footer/Footer";
 // Portfolio
 const Portfolio: React.FC = () => {
 
@@ -17,6 +18,9 @@ const Portfolio: React.FC = () => {
 				<div  className={s.projectList}>
 					<ProjectList size={"large"}/>
 				</div>
+			</div>
+			<div>
+				<Footer/>
 			</div>
 		</section>
 	)

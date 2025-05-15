@@ -1,7 +1,7 @@
 .conteiner {
   padding: 0 20px;
   height: 50px;
-  width: calc(100vw - 40px);
+  width: calc(100svw - 40px);
   background-color: rgba(128, 128, 128, 0.5);
   display: flex;
   justify-content: space-between;
@@ -12,8 +12,9 @@
   background-color: dimgray;
   border-radius: 10px;
   max-width: calc(var(--container-width) - 70px);
-  height: 60px;
+  min-width: 300px;
   margin: 0 20px;
+  height: 60px;
   padding: 0 15px;
   display: flex;
   justify-content: space-between;

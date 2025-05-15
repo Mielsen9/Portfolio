@@ -2,6 +2,7 @@
 @use "@/App/scss/utils/mixins" as *;
 .conteiner {
   height: 100svh;
+  width: 100svw;
   display: flex;
   align-items: center;
   background-image: url("@/asset/images/intro/Intro.jpg");
@@ -38,10 +39,10 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
-    height: 67vh;
+    height: 67svh;
     max-width: 450px;
   }
   .myImage {
-    height:  78%;
+    height: 78%;
   }
 }

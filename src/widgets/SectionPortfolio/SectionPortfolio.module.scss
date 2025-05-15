@@ -4,7 +4,7 @@
   background-color: dimgray;
 }
 .container {
-  height: 130vh;
+  height: 130svh;
 }
 .upContainer {
   display: flex;
@@ -20,7 +20,7 @@
 }
 @include tablet {
   .container {
-    height: calc(100vh + 800px);
+    height: calc(100svh + 800px);
   }
   .upContainer {
     height: 100%;

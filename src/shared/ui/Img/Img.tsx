@@ -18,7 +18,7 @@ const Img: React.FC<PropsType> = React.memo((p) => {
 			<source srcSet={p.srcJpg} type="image/jpeg"/>
 			<img src={p.srcJpg}
 			     alt={p.alt || ""}
-			     className={`${s.imgConteiner} ${p.className || ""}`.trim()}
+			     className={`${s.img} ${p.className || ""}`.trim()}
 			     loading={p.loading}
 			/>
 		</picture>

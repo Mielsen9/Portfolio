@@ -38,35 +38,26 @@
   z-index: 0;
 }
 #ContactMe {
-  z-index: 1;
+  z-index: -1;
 }
-#footer {
-  z-index: -2;
-  height: 90svh;
-  transform: translateZ(-300px) translateY(270px) scale(2);
+#ContactMe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background-color: dimgray;
+  z-index: -1; // Щоб псевдоелемент був позаду основного контенту
 }
 
 @include tablet {
-  #footer {
-    height: 130svh;
-  }
-}
-@include mobile {
-  #footer {
-    height: 150svh;
-  }
-}
-// Media Query
-@media (max-height: 740px) {
-  #footer {
-    height: 180svh;
+  #projects {
+    height: auto;
   }
 }
 
-.contactMe {
-  position: relative;
-}
-
+// ------------------------------------------------------------------
 .professionalSkillsBackground {
   background:
           linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -78,3 +69,4 @@
           linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
           url("@/asset/images/ContactMe/backGroundContactMe.png") bottom/cover no-repeat;
 }
+

@@ -4,9 +4,9 @@
 .content_container {
   width:  100%;
   position: absolute;
-  top: 90px;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
 
   max-width:  calc(var(--container-width) - 200px);
   margin: 0 auto;
@@ -35,10 +35,10 @@
     margin: 0 auto;
   }
 }
-// Media Query
-@media (max-height: 690px) {
-  .content_container {
-    top: 30px;
-  }
-}
+//// Media Query
+//@media (max-height: 690px) {
+//  .content_container {
+//    top: 30px;
+//  }
+//}
 

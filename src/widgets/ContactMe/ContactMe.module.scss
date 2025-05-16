@@ -35,4 +35,10 @@
     margin: 0 auto;
   }
 }
+// Media Query
+@media (max-height: 690px) {
+  .content_container {
+    top: 30px;
+  }
+}
 
